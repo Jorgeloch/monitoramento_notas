@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+.blue-bg {
+    background-color: blue;
+    color: aliceblue;
+}
+
+.white-bg {
+    background-color: aliceblue;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 2rem 0;
+}
+
+.max-height {
+    height: 86vh;
+}
+
+header {
+    width: 100%;
+    position: fixed;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
