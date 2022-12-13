@@ -1,28 +1,70 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./styles.css">
-    <title>Document</title>
-</head>
-<body>
-    <header class="blue-bg">
-        <div class="container header-content">
-            <img src="./images/logo-ufs.png" alt="logotipo da universidade federal de sergipe">
-            <div class="info">
-                <h1>Evolucao curricular</h1>
-                <p>Jorge Mendonca Boaretto Loch</p>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Tarefa 02</title>
+        <link rel="stylesheet" href="assets/css/reset.css">
+        <link rel="stylesheet" href="assets/css/style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@600&display=swap" rel="stylesheet">    
+    </head>
+
+    <body>
+        <header>
+            <div class="header-logo">
+                <img src="assets/images/logo-ufs.png">
             </div>
-        </div>
-    </header>
-    <main class="white-bg max-height">
-    </main>
-    <footer class="blue-bg">
-        <div class="container footer-content">
-            <img src="./images/logo-ufs.png" alt="logotipo da universidade federal de sergipe">
-        </div>
-    </footer>
-</body>
+            <div class="header-texto">
+                <h1>Tarefa 02 - Programacão Funcional</h1>
+                <h1>Jorge Mendonca Boaretto Loch</h1>
+            </div>
+        </header>
+        <main>
+            <div class="introducao">
+                <h1>Bem Vindo!</h1>
+                <h2>Complete os campos abaixo caso deseje cadastrar um novo componente curricular</h2>
+            </div>
+            <div class="entrada-de-dados">
+                <form action="#"></form>
+                    <p>
+                        <label for="ano-periodo">Ano/Periodo Letivo</label>
+                        <input type="text" name="ano-periodo" id="periodo" placeholder="Ex.: 2017.1">
+                    </p>
+                    <p>
+                        <label for="codigo-disciplina">Codigo da Disciplina</label>
+                        <input type="text" name="codigo-disciplina" id="codigo_da_turma" placeholder="Ex.: COMP0480">
+                    </p>
+                    <p>
+                        <label for="carga-horaria">Carga Horaria</label>
+                        <input type="text" name="carga-horaria" id="carga_horaria" placeholder="Ex.: ">
+                    </p>
+                    <p>
+                        <label for="fequencia">Frequencia</label>
+                        <input type="text" name="frequencia" id="frequencia" placeholder="Ex.: 80.5">
+                    </p>
+                    <p>
+                        <label for="nota-aluno">Nota</label>
+                        <input type="text" name="nota-aluno" id="nota" placeholder="Ex.: 10.0">
+                    </p>
+                </form>
+                <button onclick="fetchAPIOnClick()">Cadastrar</button>
+            </div>
+            <div class="tabela">
+                <table id="tb-dados">
+                    <thead>
+                        <tr>
+                            <th>Ano/Periodo Letivo</th>
+                            <th>Código</th>
+                            <th>CH</th>
+                            <th>Freq %</th>
+                            <th>Nota</th>
+                        </tr>
+                    </thead>
+                </table>
+            </div>
+        </main>
+    </body>
+    <script src="assets/js/processos.js"></script>
 </html>
